@@ -1,15 +1,4 @@
-<<<<<<< HEAD
 # Finance-Application
-=======
-# Ledger — Personal Finance Management App
-
-Full-stack implementation of Project **UY6758GH**, Steps 1–5:
-
-1. User Registration & Authentication (JWT)
-2. Income & Expense Tracking (CRUD + categories)
-3. Financial Reports (monthly / yearly, totals, category breakdown)
-4. Budgeting (per-category monthly limits + over-budget alerts)
-5. Data Persistence (SQLite + backup / restore)
 
 Tech stack: **Python (Flask) · SQL (SQLite) · React · HTML/CSS/JS (Vite)**.
 
@@ -45,7 +34,6 @@ venv\Scripts\activate        # Windows
 pip install -r requirements.txt
 python app.py
 ```
-
 The API starts at **http://127.0.0.1:5000**. A `finance.db` SQLite file is
 created automatically on first run — no setup needed.
 
@@ -92,9 +80,3 @@ running at the same time.
 
 All endpoints except register/login require `Authorization: Bearer <token>`.
 
-## Notes
-
-- Passwords are hashed with `pbkdf2:sha256` (Werkzeug) — never stored in plain text.
-- Every transaction/budget is scoped to the logged-in user via the JWT.
-- Step 6 (unit tests + user manual) was intentionally left out per your request to stop at Step 5 — happy to add it next.
->>>>>>> 9e4f5e7 (Initial commit)
